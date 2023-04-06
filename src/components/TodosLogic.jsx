@@ -1,26 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from "uuid";
 import InputTodo from "@/components/InputTodo";
 import TodosList from "@/components/TodosList"
 
 const TodosLogic = () => {
-    const [todos, setTodos] = useState([
-        {
-          id: 1,
-          title: 'Setup development environment',
-          completed: true,
-        },
-        {
-          id: 2,
-          title: 'Develop website and add content',
-          completed: false,
-        },
-        {
-          id: 3,
-          title: 'Deploy to live server',
-          completed: false,
-        },
-      ]);
-      const handleChange = (id) => {
+  const [todos, setTodos] = useState(getInitialTodos());
+  function getInitialTodos() {
+    // getting stored items
+    const temp = localStorage.getItem('todos');
+    const savedTodos = JSON.parse(temp);
+    return savedTodos || [];
+  }
+  useEffect(() => {
+    // storing todos items
+    const temp = JSON.stringify(todos);
+    localStorage.setItem('todos', temp);
+  }, [todos]);
+  const handleChange = (id) => {
         setTodos((prevState) =>
           prevState.map((todo) => {
             if (todo.id === id) {
@@ -40,10 +36,28 @@ const TodosLogic = () => {
           }),
         ]);
       };
+      const addTodoItem = (title) => {
+        const newTodo = {
+          id: uuidv4(),
+          title: title,
+          completed: false,
+        };
+        setTodos([...todos, newTodo]);
+      };
+      const setUpdate = (updatedTitle, id) => {
+        setTodos(
+          todos.map((todo) => {
+            if (todo.id === id) {
+              todo.title = updatedTitle;
+            }
+            return todo;
+          })
+        );
+      };
   return (
     <div>
-    <InputTodo />
-    <TodosList todosProps={todos} handleChange={handleChange} delTodo={delTodo}/>
+      <InputTodo addTodoItem={addTodoItem} />
+      <TodosList todosProps={todos} handleChange={handleChange} delTodo={delTodo} setUpdate={setUpdate}/>
     </div>
   )
 }
