@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Todo List ](#-todo-list-)
+- [📖 Todo React ](#-todo-list-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Todo List <a name="about-project"></a>
+# 📖 Todo React <a name="about-project"></a>
 
 > 
 
@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click here to [View page](https://matee-safi.github.io/Todo-list/)
+- Click here to [View page](https://matee-safi.github.io/todo-app-react/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ A browser
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/matee-safi/webpack-demo.git
+git clone https://github.com/matee-safi/todo-app-react.git
 
 ### Install
 
@@ -143,7 +143,7 @@ Get a hosting website and give all of the github files
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-You can contribute to this project by writing an issue <a href="https://github.com/matee-safi/webpack-demo/issues" >here</a>
+You can contribute to this project by writing an issue <a href="https://github.com/matee-safi/todo-app-react/issues" >here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,7 @@ If you like this project please leave a
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a><div> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+## 🙏 Acknowledgments <a name="acknowledgements"></a><
 
 <a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Refresh icons created by Arkinasi - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/more" title="more icons">More icons created by Kirill Kazachek - Flaticon</a>
