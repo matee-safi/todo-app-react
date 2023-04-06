@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click here to [View page](https://matee-safi.github.io/todo-app-react/)
+- Click here to [View page](https://matee-safi.github.io/todo-app-react/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
